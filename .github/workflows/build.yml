@@ -1,13 +1,9 @@
-name: Build
+name: Build nightly
 
 on:
-  release:
-    types: [published]
-  push:
+  pull_request:
     branches:
-    - main
-  
-  
+      - main
   workflow_dispatch:
 
 jobs:
